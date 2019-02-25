@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Praktikum 9</title>
+           
+</head>
+
+<body>
+    <div style="text-align:center">
+        <bottom onclick="Playpause()">play/pause</bottom>
+        <bottom onclick="makeBig()">Big</bottom>
+        <bottom onclick="makeSmall()">Small</bottom>
+        <bottom onclick="makeNormal()">Normal</bottom>
+        <br><br>
+        <video id="video" widht="420">
+            <source src ="pixar vgel.mp4" type="video/mp4">
+                youur browser does not suppot HTMLS video.
+        </video>
+    </div>
+    <scrip>
+        var myVideo = document.getElementByid("video");
+
+        fuction playpause () {
+            if (myVideo.Paused)
+            myVideo.play();
+            else
+            myVideo.Pause();
+        }
+        fuctin makeBig() {
+        myVideo.widt = 560;
+
+        }
+        functio makeSmall() { 
+            myVideo.Width = 320;
+        }
+        function makeNormal () {
+            myVideo.width = 420;
+        }
+    
+    </scrip>
+
+
+</body>
+</html>
